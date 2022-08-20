@@ -37,6 +37,9 @@ ul {
   margin: 0;
   padding-left: 0;
 }
+input {
+  padding-right: 0;
+}
 
 .no-decor {
   text-decoration: none;
@@ -540,6 +543,9 @@ ul {
   background: var(--secondary-background);
 }
 
+.footer-address-wrap {
+  margin-right: 70px;
+}
 .logo-footer {
   color: var(--footer-logo-color);
 }
@@ -552,7 +558,6 @@ ul {
 .footer-pege .container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
 }
 
 .footer-soc-titel {
@@ -588,11 +593,80 @@ ul {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-soc-wrap {
+  margin-right: 93px;
+}
 .footer-soc-link {
   background-color: rgba(255, 255, 255, 0.1);
   color: var(--white-text-color);
 }
 
+.footer-subscribe-wrap {
+  display: flex;
+  align-items: flex-end;
+}
+.subscribe-mail {
+  width: 358px;
+  margin-right: 12px;
+}
+.lable-subscribe {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-text-color);
+}
+.input-subscribe {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.btn-subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 28px;
+  /* min-width: 200px; */
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+}
+
+.text-btn-subscribe {
+  padding-left: 4px;
+  margin-right: 10px;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
+}
+.icon-send {
+  fill: #ffffff;
+}
+/* ----------------- MODAL ----------------- */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -605,8 +679,6 @@ ul {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* ----------------- MODAL ----------------- */
 
 .modal-backdrop {
   transition-property: opacity, visibility;
